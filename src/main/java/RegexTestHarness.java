@@ -20,7 +20,7 @@ public class RegexTestHarness {
             while ( matcher.find() ) {
                 if (matcher.group() == "")
                     break;
-                System.out.printf("I found the text" +
+                System.out.printf("MATCH! Found the text" +
                     " \"%s\" starting at " +
                     "index %d and ending at index %d.%n",
                     matcher.group(),
