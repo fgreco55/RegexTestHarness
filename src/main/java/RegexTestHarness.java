@@ -11,10 +11,10 @@ public class RegexTestHarness {
             console = new Scanner(System.in);
 
             System.out.print("Enter regex: ");
-            Pattern pattern = Pattern.compile(console.nextLine());
+            Pattern ipattern = Pattern.compile(console.nextLine());
 
             System.out.print("Enter input string to search: ");
-            Matcher matcher = pattern.matcher(console.nextLine());
+            Matcher matcher = ipattern.matcher(console.nextLine());
 
             boolean found = false;
             while ( matcher.find() ) {
