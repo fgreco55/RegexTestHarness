@@ -38,8 +38,11 @@ public class RegexTestHarness {
                 if (matcher.group().equals(""))
                     break;
 
-                System.out.printf("I found the text" + " \"%s\" starting at " + "index %d and ending at index %d.%n",
+                System.out.printf("MATCH! Found the text" +
+                    " \"%s\" starting at " +
+                    "index %d and ending at index %d.%n",
                     matcher.group(), matcher.start(), matcher.end());
+
                 found = true;
             }
 
